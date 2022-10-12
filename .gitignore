@@ -14,16 +14,20 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
 var/
 wheels/
+release/AVToolsgitconnect/packages/
+/release/AVToolsgitconnect/AVToolsgitconnect/obj
+/release/AVToolsgitconnect/AVToolsgitconnect/bin
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
+.vs
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -102,3 +106,25 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# pycharm
+.idea
+
+# annet
+extensions/AVUtviklerMal.extension/
+extensions/AVVA.extension/
+extensions/AVRimp.extension/
+site-packages/ironpython-stubs-master/logs/
+site-packages/ironpython-stubs-master/bin/
+site-packages/ironpython-stubs-master/release/
+AutocompleteStubs/
+AutocompleteStubs - IFC/
+extensions/AVTools.extension/AVTools.tab/RServer.panel/OpenProj.pushbutton/revitserveractions.dll
+*.ide-shm
+*.ide-wal
+release/AVToolsgitconnect/.vs/
+progdata/picklefolder/*.pickle
+*.0001.rte
+
+# stubfiler
+typeshed/
