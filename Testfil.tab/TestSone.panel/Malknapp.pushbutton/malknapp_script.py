@@ -34,16 +34,19 @@ __beta__ = False  # Knapp deaktivert hos brukere som ikke har spesifikt aktivert
 # Finn flere variabler her:
 # https://pyrevit.readthedocs.io/en/latest/articles/scriptanatomy.html
 
-from pyrevit import DB, UI  # Dette er alt du trenger for å få tilgang til nesten hele Revit sin API.
-from pyrevit import script, forms  # Se eksempelbruk under
+print "TEst"
 
-if __shiftclick__:  # variabel som er True hvis bruker shiftklikker
-    klikkmetode = "Shiftklikk"
-    print "Shiftklikk"
-else:
-    klikkmetode = "Normalklikk"
-    print "Normalklikk"
-
-melding = "Dette er en mal/demoknapp for utviklere,\n" \
-          "alt-klikk på knapp for å lese kildekode med mer informasjon."
-forms.alert(melding, title=klikkmetode, cancel=True, yes=True, no=True, retry=True, exit=True)
+# from pyrevit import DB, UI  # Dette er alt du trenger for å få tilgang til nesten hele Revit sin API.
+# from pyrevit import script, forms  # Se eksempelbruk under
+#
+#
+# if __shiftclick__:  # variabel som er True hvis bruker shiftklikker
+#     klikkmetode = "Shiftklikk"
+#     print "Shiftklikk"
+# else:
+#     klikkmetode = "Normalklikk"
+#     print "Normalklikk"
+#
+# melding = "Dette er en mal/demoknapp for utviklere,\n" \
+#           "alt-klikk på knapp for å lese kildekode med mer informasjon."
+# forms.alert(melding, title=klikkmetode, cancel=True, yes=True, no=True, retry=True, exit=True)
