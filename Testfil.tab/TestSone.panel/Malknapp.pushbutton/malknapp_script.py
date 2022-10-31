@@ -4,7 +4,7 @@ from pyrevit import DB, revit
 from pyrevit import forms
 from pyrevit import script
 
-__title__ = 'Hvem har...'
+__title__ = 'Hvem har...(test)'
 __doc__ = "Vis meg editeringslogg for valgte objekter."
 
 outwindu = script.get_output()
