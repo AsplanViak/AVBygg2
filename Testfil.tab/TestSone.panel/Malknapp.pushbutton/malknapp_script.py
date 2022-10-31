@@ -22,7 +22,7 @@ __doc__ = "Alt-klikk denne knappen og utforsk kildekoden for å lage egne knappe
 # End MÅ ha
 
 # Kan sløyfes
-__cleanengine__ = True  # Dette forteller tolkeren at den skal sette opp en ny ironpython motor for denne knappen, slik at den ikke kommer i konflikt med andre funksjoner, settes nesten alltid til FALSE, TRUE når du jobber med knappen.
+__cleanengine__ = False  # Dette forteller tolkeren at den skal sette opp en ny ironpython motor for denne knappen, slik at den ikke kommer i konflikt med andre funksjoner, settes nesten alltid til FALSE, TRUE når du jobber med knappen.
 __fullframeengine__ = False  # Denne er nødvendig for å få tilgang til noen moduler, denne gjør knappen vesentrlig tregere i oppstart hvis den står som TRUE
 __context__ = "zerodoc"  # Denne forteller tolkeren at knappen skal kunne brukes selv om et Revit dokument ikke er åpent.
 __helpurl__ = "google.no"  # Hjelp URL når bruker trykker F1 over knapp.
@@ -34,19 +34,16 @@ __beta__ = False  # Knapp deaktivert hos brukere som ikke har spesifikt aktivert
 # Finn flere variabler her:
 # https://pyrevit.readthedocs.io/en/latest/articles/scriptanatomy.html
 
-print "TEst"
+from pyrevit import DB, UI  # Dette er alt du trenger for å få tilgang til nesten hele Revit sin API.
+from pyrevit import script, forms  # Se eksempelbruk under
 
-# from pyrevit import DB, UI  # Dette er alt du trenger for å få tilgang til nesten hele Revit sin API.
-# from pyrevit import script, forms  # Se eksempelbruk under
-#
-#
-# if __shiftclick__:  # variabel som er True hvis bruker shiftklikker
-#     klikkmetode = "Shiftklikk"
-#     print "Shiftklikk"
-# else:
-#     klikkmetode = "Normalklikk"
-#     print "Normalklikk"
-#
-# melding = "Dette er en mal/demoknapp for utviklere,\n" \
-#           "alt-klikk på knapp for å lese kildekode med mer informasjon."
-# forms.alert(melding, title=klikkmetode, cancel=True, yes=True, no=True, retry=True, exit=True)
+if __shiftclick__:  # variabel som er True hvis bruker shiftklikker
+    klikkmetode = "Shiftklikk"
+    print "Shiftklikk"
+else:
+    klikkmetode = "Normalklikk"
+    print "Normalklikk"
+
+melding = "Dette er en mal/demoknapp for utviklere,\n" \
+          "alt-klikk på knapp for å lese kildekode med mer informasjon."
+forms.alert(melding, title=klikkmetode, cancel=True, yes=True, no=True, retry=True, exit=True)
