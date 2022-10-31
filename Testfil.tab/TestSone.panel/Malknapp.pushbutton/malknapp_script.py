@@ -14,6 +14,8 @@ Fungerende autocomplete i pycharm.
     Sett disse mappene til sources: pyrevitlib, site-packages, dinlokalesharepoint\Asplan Viak\AVTools - Dokumenter\AVToolsRammeverk\AutocompleteStubs
 
 """
+from System.Collections.Generic import List
+import Autodesk.Revit
 
 # Start MÅ ha
 __title__ = 'Sjekk logging'  # Denne overstyrer navnet på scriptfilen
