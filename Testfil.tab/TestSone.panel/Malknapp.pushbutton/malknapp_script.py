@@ -16,7 +16,7 @@ Fungerende autocomplete i pycharm.
 """
 
 # Start MÅ ha
-__title__ = 'Sjekk logging'  # Denne overstyrer navnet på scriptfilen
+__title__ = 'Nytittel'  # Denne overstyrer navnet på scriptfilen
 __author__ = 'Asplan Viak'  # Dette kommer opp som navnet på utvikler av knappen
 __doc__ = "Alt-klikk denne knappen og utforsk kildekoden for å lage egne knapper."  # Dette blir hjelp teksten som kommer opp når man holder musepekeren over knappen.
 # End MÅ ha
